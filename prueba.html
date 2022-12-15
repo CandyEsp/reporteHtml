@@ -1,0 +1,57 @@
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Reporte Rimac</title>
+	<link rel='stylesheet' href='main.css'>
+	
+</head>
+	<body>
+		<div class='cabecera'>
+			<div class='logo'>
+			<img src='C:\Users\Candy\Documents\Rimac\rimac.png' width='100%' height='8%'></div>
+			<div class='descarga'>
+					<a href='C:\Users\Candy\Documents\UiPath\Taller 1\Manual.docx'>
+				    	<img src='C:\Users\Candy\Documents\Rimac\dowload.png' width='100%' height='8%'>
+					</a>
+			</div>
+	   	</div>
+	   	<p class='titulo'>Resumen de la ejecución</p>
+	   	<div class='datatable-container'>
+	   		<table class='datatable'  align="center">
+	   			<tr>
+	   				<th>Caso</th>
+	   				<th>Status</th>
+	   			</tr>
+	   			<tr>
+		   			<tr>
+		   				<td  bgcolor='#DDE0FC'>Caso1</td>
+		   				<td  bgcolor='#DDE0FC'>prueba</td>
+		   			</tr>
+		   			<tr>
+		   				<td  bgcolor='#DDE0FC'>Caso2</td>
+		   				<td  bgcolor='#DDE0FC'>prueba1</td>
+		   			</tr>
+	   			</tr>
+	   		</table><br>
+	   		<table>
+	   			<tr>
+	   				<th>Caso</th>
+	   				<th>Status</th>
+	   			</tr>
+	   			<tr>
+	   				
+	   			</tr>
+	   		</table>
+	   	</div>
+	   	<div class='status'> <p>Estado Final:</p><p id="estado">PASS</p></div>
+	   	<script>
+			const myElement = document.getElementById('estado').innerHTML;
+			if(myElement.includes('PASS')){
+				document.getElementById("estado").style.color = "green";
+			}else{
+				document.getElementById("estado").style.color = "red";
+			}
+		</script>
+	   </body>
+	   </html>
